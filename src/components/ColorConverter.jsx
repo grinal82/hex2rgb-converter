@@ -18,7 +18,7 @@ function ColorConverter(props) {
       } else {
         setError(true);
         setRgbColor('');
-        props.setColor('');
+        props.setColor('rgb(255,0,0)');
       }
     }
   }, [hexColor, props]);
@@ -36,7 +36,7 @@ function ColorConverter(props) {
         onChange={handleHexChange}
         maxLength={7}
       />
-      {error ? <div className="error-message">ОШИБКА</div> : <div className="rgb-output"><p>{rgbColor}</p></div>}
+      {error ? <div className="error-message" style ={{backgroundColor: "white"}}>ОШИБКА</div> : <div className="rgb-output"><p>{rgbColor}</p></div>}
     </div>
   );
 }

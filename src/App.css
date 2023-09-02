@@ -23,6 +23,15 @@
 .error-message {
   color: red;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .rgb-output {
@@ -51,5 +60,5 @@
   height: 50px;
   background-color:black;
   opacity: .3;
-
 }
+
